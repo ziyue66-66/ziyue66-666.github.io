@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+        }
+        .photo-cell {
+            text-align: center;
+            width: 120px;
+        }
+        .photo {
+            width: 100px;
+            height: 130px;
+            object-fit: cover;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+        }
+        .section-title {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            text-align: center;
+        }
+        .self-evaluation {
+            line-height: 1.6;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            caption-side: top;
+        }
+        .basic-info-table {
+            width: 100%;
+        }
+        .basic-info-table tr td:nth-child(odd) {
+            width: 15%;
+            font-weight: bold;
+        }
+        .basic-info-table tr td:nth-child(even) {
+            width: 20%;
+        }
+        .photo-column {
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <h1>个人简历</h1>
+        
+        <table class="basic-info-table">
+            <caption>基本信息</caption>
+            <tr>
+                <td>姓名</td>
+                <td>王子林</td>
+                <td>性别</td>
+                <td>男</td>
+                <td rowspan="4" class="photo-cell photo-column">
+                    <!-- 这里替换为你的真实照片 -->
+                    <img src="llll.jpg" alt="个人照片" class="photo">
+                </td>
+            </tr>
+            <tr>
+                <td>年龄</td>
+                <td>18</td>
+                <td>籍贯</td>
+                <td>山东菏泽</td>
+            </tr>
+            <tr>
+                <td>联系电话</td>
+                <td>1000000000</td>
+                <td>电子邮箱</td>
+                <td>wzlzszds@email.com</td>
+            </tr>
+            <tr>
+                <td>学历</td>
+                <td>本科</td>
+                <td>健康状况</td>
+                <td>良好</td>
+            </tr>
+            <tr>
+                <td>婚姻状况</td>
+                <td colspan="3">未婚</td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <table>
+            <caption>求职意向</caption>
+            <tr>
+                <td>求职意向</td>
+                <td>Web前端开发工程师</td>
+                <td>专业</td>
+                <td>软件工程</td>
+                <td>毕业院校</td>
+                <td>鲁东大学</td>
+            </tr>
+        </table>
+        
+        <table>
+            <caption>技能证书</caption>
+            <tr>
+                <td colspan="6">
+                    <ul>
+                        <li>英语CET-6，良好的英文读写能力</li>
+                        <li>全国计算机等级考试二级C语言</li>
+                        <li>Web前端开发工程师认证</li>
+                        <li>熟悉HTML5、CSS3、JavaScript、Vue.js等前端技术</li>
+                        <li>熟悉Python、Java等编程语言</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        
+        <table>
+            <caption>个人特长与爱好</caption>
+            <tr>
+                <td colspan="6">
+                    <ul>
+                        <li>擅长网页设计与前端开发，有多个个人项目经验</li>
+                        <li>热爱编程，喜欢研究新技术</li>
+                        <li>喜欢篮球、羽毛球等体育运动</li>
+                        <li>爱好摄影和旅行</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        
+        <table>
+            <caption>项目经历</caption>
+            <tr>
+                <th width="15%">时间</th>
+                <th width="25%">项目名称</th>
+                <th width="60%">项目描述</th>
+            </tr>
+            <tr>
+                <td>2020.03-2020.06</td>
+                <td>企业官网开发</td>
+                <td>负责某企业官网的前端开发工作，使用HTML5、CSS3和JavaScript实现响应式设计，确保网站在不同设备上良好显示。</td>
+            </tr>
+            <tr>
+                <td>2020.07-2020.12</td>
+                <td>电商平台前端开发</td>
+                <td>参与某电商平台前端开发，使用Vue.js框架，负责商品展示模块和购物车功能的实现。</td>
+            </tr>
+            <tr>
+                <td>2021.01-至今</td>
+                <td>后台管理系统</td>
+                <td>独立开发企业后台管理系统前端界面，使用Vue.js+Element UI，实现数据可视化展示和权限管理功能。</td>
+            </tr>
+        </table>
+        
+        <table>
+            <caption>自我评价</caption>
+            <tr>
+                <td colspan="6" class="self-evaluation">
+                    <!-- 这里替换为你的真实自我评价，不少于200字 -->
+                    <p>我是一名热爱前端开发的工程师，具备扎实的计算机基础知识和丰富的项目实践经验。在校期间系统学习了计算机相关课程，成绩优异，多次获得奖学金。通过自学掌握了前端开发的核心技术栈，并完成了多个实践项目。</p>
+                    
+                    <p>技术方面，我熟练掌握HTML5、CSS3和JavaScript等前端基础技术，能够手写符合W3C标准的代码。熟悉Vue.js框架及其生态系统，能够使用Vue CLI快速搭建项目，了解Vuex状态管理和Vue Router路由控制。对前端工程化有一定了解，能够配置Webpack等构建工具。</p>
+                    
+                    <p>在项目实践中，我注重代码质量和用户体验，能够根据设计稿精准还原页面效果。具有良好的问题解决能力，能够独立分析和解决开发中遇到的技术问题。同时我也注重团队协作，具有良好的沟通能力和责任心。</p>
+                    
+                    <p>我性格开朗，学习能力强，对新知识和技术保持高度热情。工作认真负责，能够承受一定的工作压力。未来我希望能在前端领域继续深耕，成为一名优秀的前端开发工程师。</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
